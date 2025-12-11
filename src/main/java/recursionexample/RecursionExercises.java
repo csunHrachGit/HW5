@@ -8,6 +8,28 @@ package recursionexample;
  */
 public class RecursionExercises {
 
+    // Computes the factorial of a given non-negative integer n using a recursive approach.
+     //
+     // This method demonstrates the classic structure of a recursive function:
+     //   1. A base case (or multiple base cases) — conditions under which recursion stops.
+     //   2. A recursive case — where the method calls itself, gradually reducing the problem.
+     //
+     // The factorial of a number n (written n!) is defined mathematically as:
+     //      n! = n × (n - 1) × (n - 2) × ... × 1
+     // Special definitions:
+     //      0! = 1  (by mathematical convention)
+     //      1! = 1
+     //
+     // The recursive strategy works because each call reduces n by 1 and moves closer 
+     // to the base case. For example:
+     //      factorialRecursive(4)
+     //      → 4 * factorialRecursive(3)
+     //     → 4 * (3 * factorialRecursive(2))
+     //      → 4 * (3 * (2 * factorialRecursive(1)))
+     //      → 4 * 3 * 2 * 1
+     //    = 24
+     // This continues until n reaches one of the base cases.
+    
     // Task 1: recursive factorial
     public static long factorialRecursive(int n) {
         if (n < 0) {
